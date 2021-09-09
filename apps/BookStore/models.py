@@ -22,4 +22,4 @@ class libros(models.Model):
     idioma = models.CharField(max_length=50, null=False, blank=False)
     paginas = models.IntegerField(null=False, blank=False)
     descripcion = models.TextField(null=False, blank=False)
-
+    imagen = models.URLField(max_length=8000, blank=False, null=False, default='https://i.ibb.co/0JZN3GS/6034d7d1f3e0f54a99b2b2bd-Mujercitas-louisa-may-alcott-editorial-alma.jpg')

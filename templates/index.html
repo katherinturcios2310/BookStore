@@ -44,7 +44,7 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="{% static 'images/logo.png'%}" alt="#"></a> </div>
+                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><img src="{% static 'images/logo.png'%}" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -54,10 +54,10 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="index.html">Home</a> </li>
-                                 <li><a href="about.html">About us</a> </li>
-                                 <li><a href="books.html">Our Books</a></li>
-                                 <li><a href="library.html">library</a></li>
-                                 <li><a href="contact.html">Contact us</a></li>
+                                 <li class=""nav-item"><a href="{%url 'BookStore:about'%}" class="nav-link">About us</a> </li>
+                                 <li><a href="{%url 'BookStore:books'%}">Our Books</a></li>
+                                 <li><a href="{%url 'BookStore:library'%}">library</a></li>
+                                 <li><a href="{%url 'BookStore:contact'%}">Contact us</a></li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png'%}" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png'%}" alt="#" /></a> </li>
                               </ul>
