@@ -10,7 +10,7 @@ class resourcelibros (resources.ModelResource):
 
 class adminlibros(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['titulo']
-    list_display = ['titulo', 'descripcion']
+    list_display = ['titulo', 'descripcion', 'fk_autores', 'fk_editoriales']
     resource_class = resourcelibros
 
 admin.site.register(libros, adminlibros)

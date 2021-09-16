@@ -3,6 +3,21 @@
 <html lang="en">
    <head>
       <!-- basic -->
+      <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+               </style>
+               <style>
+                     @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
@@ -44,7 +59,7 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><img src="{% static 'images/logo.png'%}" alt="#"></a> </div>
+                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><font face="Princess Sofia" size="6" color="white">Kathe Books</font></a> </div>
                         </div>
                      </div>
                   </div>
@@ -53,11 +68,11 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li > <a href="{%url 'BookStore:index'%}">Home</a> </li>
-                                 <li> <a href="{%url 'BookStore:about'%}">About us</a> </li>
-                                 <li><a href="{%url 'BookStore:books'%}">Our Books</a></li>
-                                 <li class="active"><a href="library.html">library</a></li>
-                                 <li><a href="{%url 'BookStore:contact'%}">Contact us</a></li>
+                                 <li > <a href="{%url 'BookStore:index'%}"><font face="Cormorant Upright" size="3" color="white">Inicio</font></a> </li>
+                                 <li> <a href="{%url 'BookStore:about'%}"><font face="Cormorant Upright" size="3" color="white">Sobre Nosotros</font></a> </li>
+                                 <li><a href="{%url 'BookStore:books'%}"><font face="Cormorant Upright" size="3" color="white">Libros</font></a></li>
+                                 <li class="active"><a href="{%url 'BookStore:library'%}"><font face="Cormorant Upright" size="3" color="white">Libreria</font></a></li>
+                                 <li><a href="{%url 'BookStore:contact'%}"><font face="Cormorant Upright" size="3" color="white">Contactanos</font></a></li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png'%}" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png'%}" alt="#" /></a> </li>
                               </ul>
@@ -77,7 +92,7 @@
             <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="abouttitle">
-                     <h2>Our Library</h2>
+                     <h2><font face="Mountains of Christmas" size="" color="">Nuestro Mundo </font><font face="Mountains of Christmas" size="" color="white">Encantado</font></h2>
                   </div>
                </div>
             </div>
@@ -89,7 +104,10 @@
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                     <h2><font face="Princess Sofia" size="" color="#4E342E">Nuestra</font><strong class="black"><font face="Princess Sofia" size="" color="">Libreria</font></strong></h2>
+                     <span><p class="text-justify"><font  face="Cormorant Upright" size="4">Esperamos que disfrute su visita tanto como nosotros disfrutamos trabajar acá.
+                        Una selección importante de títulos en Humanidades y Narrativa contemporánea.
+                     Prepárese para los encuentros con libros, con amigos y con escritores. </font></p></span>
                   </div>
                </div>
             </div>
@@ -99,7 +117,7 @@
                <div class="row">
                   <div class="col-md-10 offset-md-1">
                      <div class="Library-box">
-                        <figure><img src="{% static 'images/Library-.jpg'%}" alt="#"/></figure>
+                        <figure><img class="rounded mx-auto d-block" src="https://i.ibb.co/DKbHDvY/61ca23d7df08bda91581bb8ffac69409.jpg" alt="#"/></figure>
                      </div>
                   </div>
                </div>
@@ -109,45 +127,21 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="read-more">
-                     <a href="#">Read More</a>
+                     <a href="{%url 'BookStore:books'%}"><font face="Allison" size="">Leer Mas</font></a>
                   </div>
                </div>
             </div>
          </div>
       </div>
       <!-- end Library -->
-      <!-- footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row pdn-top-30">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                     <div class="Follow">
-                        <h3>Follow Us</h3>
-                     </div>
-                     <ul class="location_icon">
-                        <li> <a href="#"><img src="{% static 'icon/facebook.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/Twitter.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/linkedin.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/instagram.png'%}"></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                     <div class="Follow">
-                        <h3>Newsletter</h3>
-                     </div>
-                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
-                     <button class="Subscribe">Subscribe</button>
-                  </div>
-               </div>
-            </div>
-         </div>
+     <footer>
          <div class="copyright">
             <div class="container">
                <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
             </div>
          </div>
       </footer>
+
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="{% static 'js/jquery.min.js'%}"></script>
@@ -160,3 +154,4 @@
       <script src="{% static 'js/custom.js'%}"></script>
    </body>
 </html>
+

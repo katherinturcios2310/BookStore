@@ -3,7 +3,7 @@
      display: none;
 }
  .mean-container .mean-bar {
-     background: #81256c;
+     background: #111111;
      float: left;
      min-height: 40px;
      padding: 5px 0;
@@ -13,7 +13,7 @@
     
 }
  .mean-container a.meanmenu-reveal {
-     color: #fff;
+     color: #FDFEFE;
      cursor: pointer;
      display: block;
      font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@
      width: 26px;
 }
  .mean-container a.meanmenu-reveal span {
-     background: #ffffff none repeat scroll 0 0;
+     background: #FDFEFE none repeat scroll 0 0;
      border-radius: 0;
      display: block;
      height: 4px;
@@ -38,7 +38,7 @@
      margin: 0 
 }
  .mean-container .mean-nav {
-     background: #ffffff none repeat scroll 0 0;
+     background: #000000  none repeat scroll 0 0;
      float: left;
      margin-top: 44px;
      width: 100%;
@@ -56,7 +56,7 @@
 }
  .mean-container .mean-nav ul li a {
      border-bottom: 1px solid #ccc;
-     color: #383838;
+     color: #000000 ;
      display: block;
      float: left;
      font-size: 12px;
@@ -69,7 +69,7 @@
      width: 90%;
 }
  .mean-container .mean-nav ul li a:hover {
-     color: #38c8a8;
+     color: #000000 ;
 }
  .mean-container .mean-nav ul li li a {
      width: 80%;
@@ -82,7 +82,7 @@
      visibility: visible;
 }
  .mean-container .mean-nav ul li.mean-last a {
-     border-bottom: 1px solid #cccccc;
+     border-bottom: 1px solid #000000 ;
      margin-bottom: 0;
 }
  .mean-container .mean-nav ul li li li a {
@@ -98,7 +98,7 @@
      padding: 1em 25%;
 }
  .mean-container .mean-nav ul li a:hover {
-     ` background: #252525;
+     ` background: #000000 ;
      background: rgba(255, 255, 255, 0.1);
 }
  .mean-container .mean-nav ul li a.mean-expand {
@@ -119,7 +119,7 @@
 }
  .mean-container .mean-nav ul li a.mean-expand:hover {
      background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
-     color: #ffffff;
+     color: #000000 ;
 }
  .mean-container .mean-push {
      float: left;
@@ -145,10 +145,10 @@
      display: none;
 }
  .mean-container .mean-nav ul li a.mean-expand:hover, .mean-container .mean-nav ul li a.mean-expand:focus {
-     background: #38c8a8;
-     color: #ffffff;
+     background: #000000 ;
+     color: #000000 ;
 }
  .mean-container .mean-nav ul li a:hover {
-    color: #81256c;
+    color: #000000 ;
 }
  

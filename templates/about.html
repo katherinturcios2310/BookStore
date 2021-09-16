@@ -29,14 +29,13 @@
       <script src="{% static 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js'%}"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout">
+   <body class="main-layout contact-page">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="{% static 'images/loading.gif'%}" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
-      <header>
+    <header>
          <!-- header inner -->
          <div class="header">
             <div class="container">
@@ -44,7 +43,7 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><img src="{% static 'images/logo.png'%}" alt="#"></a> </div>
+                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><font face="Princess Sofia" size="6" color="white">Kathe Books</font></a> </div>
                         </div>
                      </div>
                   </div>
@@ -53,11 +52,11 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li > <a href="{%url 'BookStore:index'%}">Home</a> </li>
-                                 <li class="active"> <a href="about.html">About us</a> </li>
-                                 <li><a href="{%url 'BookStore:books'%}">Our Books</a></li>
-                                 <li><a href="{%url 'BookStore:library'%}">library</a></li>
-                                 <li><a href="{%url 'BookStore:contact'%}">Contact us</a></li>
+                                 <li > <a href="{%url 'BookStore:index'%}"><font face="Cormorant Upright" size="3" color="white">Inicio</font></a> </li>
+                                 <li class="active"> <a href="{%url 'BookStore:about'%}"><font face="Cormorant Upright" size="3" color="white">Sobre Nosotros</font></a> </li>
+                                 <li><a href="{%url 'BookStore:books'%}"><font face="Cormorant Upright" size="3" color="white">Libros</font></a></li>
+                                 <li><a href="{%url 'BookStore:library'%}"><font face="Cormorant Upright" size="3" color="white">Libreria</font></a></li>
+                                 <li><a href="{%url 'BookStore:contact'%}"><font face="Cormorant Upright" size="3" color="white">Contactanos</font></a></li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png'%}" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png'%}" alt="#" /></a> </li>
                               </ul>
@@ -72,70 +71,57 @@
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      <!-- about -->
       <div class="about-bg">
          <div class="container">
             <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="abouttitle">
-                     <h2>About Us</h2>
+                      <h2><font face="Mountains of Christmas" size="" color="">Nuesro Mundo de Libros</font></h2>
                   </div>
                </div>
             </div>
          </div>
       </div>
+<!-- about -->
       <div class="about">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <div class="aboutheading">
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+                     <br>
+                     <h2><font face="Princess Sofia" size="" color="#4E342E">Sobre</font><strong class="black"><font face="Princess Sofia" size="" color="">Nosotros</font></strong></h2>
+                     <span><p class="text-justify"><font  face="Cormorant Upright" size="4">Somos una familia de personas que comparten el placer de leer y la pasión por la cultura. Nuestro reto es hacer
+                        de esta familia, de este círculo de amigos, algo más grande, más cálido, cada día. Ello significa crear un
+                        ambiente relajado, estimulante, íntimo, bello, inteligente… Que los clientes sientan que Kathe Books es
+                        como su segunda casa, o mejor aún: ¡que sientan que es la primera! </font></p></span>
+
                   </div>
                </div>
             </div>
             <div class="row border">
                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                   <div class="about-box">
-                     <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                     <a href="#">Read More</a>
+                     <p class="text-justify"><font  face="Cormorant Upright" size="4">Por supuesto, Kathe Books no es solamente una librería. Realmente nos gustaría ser
+                        apreciados como un lugar generador de procesos culturales. Y también como una plataforma
+                        de expresión para distintas audiencias, conformada por una comunidad digital, una iniciativa
+                        formal de comunicación y un medio con fines editoriales. Para hacer de Kathe Books la empresa que
+                        tenemos en mente, necesitamos de un equipo profesional compuesto por individuos autónomos y
+                        despiertos, que encuentren formas eficientes de hacer lo que se debe hacer,
+                        y que contribuyan activamente a diseñar la compañía, desde su particular perspectiva.</font></p>
                   </div>
                </div>
                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                   <div class="about-box">
-                     <figure><img src="{% static 'images/about.png'%}" alt="img" /></figure>
+                     <figure><img class="rounded mx-auto d-block" src="https://i.ibb.co/q9nyzw1/1500d9a8a5dd359d192ba397d4a97f1b.jpg" alt="img" /></figure>
                   </div>
                </div>
             </div>
          </div>
-      </div>
       </div>
       <!-- end about -->
       <!-- footer -->
       <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row pdn-top-30">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                     <div class="Follow">
-                        <h3>Follow Us</h3>
-                     </div>
-                     <ul class="location_icon">
-                        <li> <a href="#"><img src="{% static 'icon/facebook.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/Twitter.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/linkedin.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/instagram.png'%}"></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                     <div class="Follow">
-                        <h3>Newsletter</h3>
-                     </div>
-                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
-                     <button class="Subscribe">Subscribe</button>
-                  </div>
-               </div>
-            </div>
-         </div>
+
          <div class="copyright">
             <div class="container">
                <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
@@ -148,9 +134,24 @@
       <script src="{% static 'js/popper.min.js'%}"></script>
       <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
       <script src="{% static 'js/jquery-3.0.0.min.js'%}"></script>
-      <script src="{% static 'js/plugin.js"></script>
+      <script src="{% static 'js/plugin.js'%}"></script>
       <!-- sidebar -->
       <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
       <script src="{% static 'js/custom.js'%}"></script>
+   <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+               </style>
+               <style>
+                     @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
    </body>
 </html>

@@ -35,8 +35,7 @@
          <div class="loader"><img src="{% static 'images/loading.gif'%}" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
-      <header>
+    <header>
          <!-- header inner -->
          <div class="header">
             <div class="container">
@@ -44,21 +43,20 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><img src="{% static 'images/logo.png'%}" alt="#"></a> </div>
+                           <div class="logo"> <a href="{%url 'BookStore:index'%}"><font face="Princess Sofia" size="6" color="white">Kathe Books</font></a> </div>
                         </div>
                      </div>
                   </div>
-                  <d
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <div class="menu-area">
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li > <a href="{%url 'BookStore:index'%}">Home</a> </li>
-                                 <li> <a href="{%url 'BookStore:about'%}">About us</a> </li>
-                                 <li><a href="{%url 'BookStore:books'%}">Our Books</a></li>
-                                 <li><a href="{%url 'BookStore:library'%}">library</a></li>
-                                 <li class="active"><a href="contact.html">Contact us</a></li>
+                                 <li > <a href="{%url 'BookStore:index'%}"><font face="Cormorant Upright" size="3" color="white">Inicio</font></a> </li>
+                                 <li class="active"> <a href="{%url 'BookStore:about'%}"><font face="Cormorant Upright" size="3" color="white">Sobre Nosotros</font></a> </li>
+                                 <li><a href="{%url 'BookStore:books'%}"><font face="Cormorant Upright" size="3" color="white">Libros</font></a></li>
+                                 <li><a href="{%url 'BookStore:library'%}"><font face="Cormorant Upright" size="3" color="white">Libreria</font></a></li>
+                                 <li><a href="{%url 'BookStore:contact'%}"><font face="Cormorant Upright" size="3" color="white">Contactanos</font></a></li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png'%}" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png'%}" alt="#" /></a> </li>
                               </ul>
@@ -78,7 +76,7 @@
             <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="abouttitle">
-                     <h2>Contact Us</h2>
+                      <h2><font face="Mountains of Christmas" size="" color="">Para mas Informacion</font></h2>
                   </div>
                </div>
             </div>
@@ -88,58 +86,42 @@
       <div class="Contact">
          <div class="container">
             <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage3">
+                     <h2><font face="Princess Sofia" size="" color="white">Contactanos</font></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <form>
                      <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <input class="form-control" placeholder="Name" name="name" type="text">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <font face="Cormorant Upright" size=""><input class="form-control" placeholder="Name" type="Name" ></font>
                         </div>
-                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <input class="form-control" placeholder="Email" name="email" type="Email">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <font face="Cormorant Upright" size=""><input class="form-control" placeholder="Phone Number" type="Phone Number"></font>
+
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <input class="form-control" placeholder="Phone Number" name="phone_nu" type="text">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <font face="Cormorant Upright" size=""><input class="form-control" placeholder="Email" type="Email"></font>
+
                         </div>
-                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <input class="form-control" placeholder="Subject" name="subject" type="text">
-                        </div>
-                        <div class="col-sm-12">
-                           <textarea class="textarea" name="message" placeholder="Message">Message</textarea>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                           <font face="Cormorant Upright" size=""><textarea class="textarea" placeholder="Message">Message</textarea></font>
+
                         </div>
                      </div>
                   </form>
                </div>
-               <button class="send-btn">Send</button>
+               <button class="send-btn"><font face="Allison" size="">Enviar</font></button>
             </div>
          </div>
       </div>
       <!-- end Contact -->
       <!-- footer -->
       <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row pdn-top-30">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                     <div class="Follow">
-                        <h3>Follow Us</h3>
-                     </div>
-                     <ul class="location_icon">
-                        <li> <a href="#"><img src="{% static 'icon/facebook.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/Twitter.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/linkedin.png'%}"></a></li>
-                        <li> <a href="#"><img src="{% static 'icon/instagram.png'%}"></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                     <div class="Follow">
-                        <h3>Newsletter</h3>
-                     </div>
-                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
-                     <button class="Subscribe">Subscribe</button>
-                  </div>
-               </div>
-            </div>
-         </div>
+
          <div class="copyright">
             <div class="container">
                <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
@@ -156,5 +138,20 @@
       <!-- sidebar -->
       <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
       <script src="{% static 'js/custom.js'%}"></script>
+   <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+               </style>
+               <style>
+                     @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
    </body>
 </html>
