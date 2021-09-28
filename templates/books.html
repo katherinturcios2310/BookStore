@@ -84,42 +84,31 @@
          </div>
       </div>
 
-      <div class="Books">
-         <div class="container d-flex justify-content-center">
-            <div class="row">
-               <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
-               </style>
-               <style>
-                     @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
-               </style>
-               <style>
-                  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-               </style>
-               <style>
-                  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
-               </style>
-               <style>
-                  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mountains+of+Christmas:wght@700&display=swap');
-               </style>
+
+
+
+
              {%if LibrosStock%}
                {%for arrayproduct in LibrosStock%}
-
-               <div class="align-self-stretch" >
-                  <div class="titlepage">
-                     <div class="text">
-                        <font face="Mountains of Christmas" size="30" class="text-dark">{{arrayproduct.titulo}}</font>
+               <div class="container thumbs">
+                  <div class="caption text-center">
+                     <div class="thumbnail">
                         <br>
                         <img src="{{arrayproduct.imagen}}">
+                     <div class="caption text-center">
+                        <font face="Mountains of Christmas" size="30" class="text-dark">{{arrayproduct.titulo}}</font>
                         <p class="text-justify col-sm-12 text-dark"><font face="Cormorant Upright" size="5">{{arrayproduct.descripcion}}</font></p>
                         <p class="price font-weight-bold"><span><font face="Dancing Script" size="6">{{arrayproduct.idioma}}</font></span></p>
-                        <p><a href="{{arrayproduct.linklibro}}" class="btn btn-dark"><font face="Allison" size="6"></font></a></p>
+                        <br>
+                        <p><a href="{{arrayproduct.linklibro}}" class="btn btn-dark"><font face="Allison" size="6">Descargar</font></a></p>
+                        <br>
+                     </div>
+                     </div>
+                   </div>
+                  </div>
                {%endfor%}
              {%endif%}
-                     </div>
-                  </div>
-               </div>
-            </div>
+
             <div class="row box">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
@@ -171,5 +160,21 @@
       <!-- sidebar -->
       <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
       <script src="{% static 'js/custom.js'%}"></script>
+
+                  <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+               </style>
+               <style>
+                     @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
+               <style>
+                  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mountains+of+Christmas:wght@700&display=swap');
+               </style>
    </body>
 </html>

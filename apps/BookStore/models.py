@@ -47,7 +47,7 @@ class libros(models.Model):
     fk_categorias = models.ManyToManyField(categorias, blank=False)
     fk_editoriales = models.ForeignKey(editoriales, on_delete=models.CASCADE, null=False, blank=False)
     idioma = models.CharField(max_length=50, null=False, blank=False)
-    paginas = models.IntegerField(null=False, blank=False)
+    paginas = models.IntegerField(null=False, blank=False, default=1)
     descripcion = models.TextField(null=False, blank=False)
     imagen = models.URLField(max_length=8000, blank=False, null=False, default='https://i.ibb.co/0JZN3GS/6034d7d1f3e0f54a99b2b2bd-Mujercitas-louisa-may-alcott-editorial-alma.jpg')
     linklibro = models.URLField(max_length=8000, blank=False, null=False, default='https://drive.google.com/file/d/1B7iR9cTTGjD3pbo5gVvq0liIdkTBTIs9/view?usp=sharing')
